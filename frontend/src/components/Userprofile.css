@@ -1,0 +1,68 @@
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+    height: 600px;
+    margin-top: 80px ;
+}
+
+.container img{
+    height: 220px;
+   
+}
+
+.container button{
+    background-color:#e65151;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.password-container {
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+}
+
+  
+.password-container input {
+    background-color: #eee;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+  
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+/* src/VideoPlayer.css */
+.video-player-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.video-wrapper {
+    flex-shrink: 0;
+    overflow: hidden; /* Ensure overflow is hidden for rounded corners */
+    border-radius: 15px; /* Adjust the border-radius for rounded corners */
+}
+.react-player {
+    border-radius: 15px; /* Ensure the ReactPlayer itself has rounded corners */
+}
+.titleList {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.timestamps-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px; /* Add space between title and timestamps list */
+    margin-left: 20px;
+    list-style: none;
+    padding: 0;
+    scrollbar-width: thin;
+    width: 400px;
+    height : 330px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: rgb(214, 225, 234);
+}
+
+.timestamp-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    color:black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+.timestamp-item:hover {
+    background-color: rgba(192, 192, 192, 0.87);
+}
+.timestamp-time {
+    margin-right: 20px; /* Adjust spacing as needed */
+  }
+.timestamp-label  {
+    flex-grow: 1; /* Ensures label takes remaining space */
+}
+.timestamp-team{
+    margin-right: 20px;
+}

@@ -1,0 +1,41 @@
+.containerV{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+    height: 600px;
+    margin-top: 80px ;
+}
+.containerV input{
+    background-color: #eee;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.containerV img{
+    padding-left:35%;
+    margin-top: 8%;
+    height: 220px;
+ }
+.containerV button {
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: block;
+    margin: auto;
+ }
+.containerV video{
+    margin-top: 10px;
+    width:  768px;
+    height: 360px;
+}

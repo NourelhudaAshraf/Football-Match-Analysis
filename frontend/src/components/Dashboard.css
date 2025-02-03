@@ -1,0 +1,33 @@
+.videoContainer {
+    display: block;
+    margin: 0 auto;
+}
+.bar{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.save-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#e65151; /* Change to desired color */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon {
+    color: #ffffff; /* Change to desired icon color */
+    font-size: 24px;
+}
+
+.bar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
