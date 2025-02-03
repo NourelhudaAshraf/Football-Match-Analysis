@@ -35,10 +35,7 @@ const db = mysql.createConnection({
     password:"",
     database:"signup"
 })
-// const videosDirectory = path.join(__dirname, 'videos/');
-// if (!fs.existsSync(videosDirectory)) {
-//   fs.mkdirSync(videosDirectory);
-// }
+
 const upload = multer();
 
 async function getGameStatistics(id) {
@@ -166,55 +163,6 @@ app.post('/deleteGameStats' , (req , res)=>{
         );
     })
 })
-
-
-// app.post('/getStatistics',  (req, res) => {
-//     const sql = "SELECT * FROM videos WHERE user_id = ?";
-//     db.query(sql, [req.body.user],  (err, data) => {
-//         if (err) {
-//             console.error('Error retrieving data:', err);
-//             return res.json({ message: "Error", list: null });
-//         }
-
-//         try {
-//             return res.json({ message: "Success", list: data });
-//         } catch (err) {
-//             console.error('Error processing video files:', err);
-//             return res.json({ message: "Error", list: null });
-//         }
-//     });
-// });
-
-// app.post('/getStatistics', (req, res) => {
-//     const sql = "SELECT * FROM videos WHERE user_id = ?";
-//     db.query(sql , [req.body.user] , (err,data)=>{
-//         data.forEach(field => {
-//             const videoFileName = field.video.split('/').pop();
-//             const videoFilePath = path.join(__dirname, 'videos', videoFileName);
-//             fs.readFile(videoFilePath, (err, buffer) => {
-//                 if (err) {
-//                     console.error(`Error reading file ${videoFileName}:`, err);
-//                     return;
-//                 }
-//                 const videoFile = {
-//                     fieldname: 'video',
-//                     originalname: videoFileName,
-//                     buffer: buffer,
-//                     mimetype: 'video/mp4',
-//                     size: buffer.length
-//                 };
-//             });
-//         });
-//         console.log(data);
-//         if (err){
-//             console.error('Error inserting data:', err);
-//              return res.json({message:"Error" , list : null});
-//             }
-//         return res.json({message:"Success" , list:data});
-//     })
-// });
-
-
 app.listen(8081 , ()=>{
     console.log("Listening.......");
 })
