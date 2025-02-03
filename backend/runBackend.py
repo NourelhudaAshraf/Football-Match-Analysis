@@ -136,10 +136,6 @@ async def upload_video(video: UploadFile):
         video_data=await video.read()
         async with aiofiles.open(file_path, "wb") as f:
             await  f.write(video_data)
-
-        # pull_kaggle_dataset("")
-        # res=update_kaggle_dataset()
-
         pull_kaggle_notebook(notebook_id)
         meta = os.path.join(notebook_path, "kernel-metadata.json")
         metaFile=open(meta, "r")
